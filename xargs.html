@@ -1,36 +1,42 @@
 <!DOCTYPE html>
 <html>
 <head>
+<meta charset="UTF-8">
 <title> xargs </title>
 </head>
 <body>
 <p class="content"> Fun with xargs </p>
-
 <br>
-
-
 <p class="content">
 All of a sudden I wanted to know the size of some binary file
 I know there is this unix command called  
-<code>du</code> it will give me the size of the file
-but the problem is I dont know where the file is! luckily I know one command called 
-<code>which</code> that will 
-give me the exact location of the file on the fs so I think 
-finding the file is not really a problem. but I got another prob, 
-how can I combine these commands? It turns out there is a unix 
-command call <code>xarg</code> it standard inputs can be pass as parameter 
-to other commands 
-<br><br>
-<code>> which bash | xargs du -h</code>
+<code>du</code> that will give me the size of the file,
 <br>
+eg. <code> du -h file </code>
 <br>
 Output:
+<code>4k    file </code>
 <br>
+but the problem is I dont know where the file is! luckily I know one command called 
+<code>which</code> that will 
+give me the exact location of the file on the filesystem,
 <br>
-<code> 720k	/bin/bash </code>
-
+eg. <code>which bash</code>
+<br>
+Output:
+<code>/bin/bash</code>
+<br>
+So I think 
+finding the file is not really a problem. But
+how can I combine these commands? It turns out there is a unix 
+command call <code>xarg</code> how
+the way it works is it standard inputs can be pass as parameter 
+to other commands
+<br>
+eg. <code>which bash | xargs du -h</code>
+<br>
+Output: <code> 720k	/bin/bash </code>
 </p>
-
 
 <style>
 .content {

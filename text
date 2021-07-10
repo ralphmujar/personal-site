@@ -8,7 +8,7 @@ experience.
 Common local dev env setup
 ===========================
 I uses git as code repository with dockerfile to containerized my  application
-and docker-compoae.yaml to glue multiple container. Also needed to add  Makefile to 
+and docker-compose.yaml to glue multiple container. Also needed to add  Makefile to 
 automate common commands like docker build or docker run, I put all application's
 source code on src/ directory and also put my ci/cd pipeline code on project
 root folder.
@@ -24,7 +24,7 @@ Jenkinsfile
 
 
 
-* í think shared hosting is good for cms like apps only eg. wordpress
+* I think shared hosting is good for cms like apps only eg. wordpress
 * I tried aws  but too afraid for charges
 * I tried deploying django apps in heroku
 * vim is cool, but not for web development.
