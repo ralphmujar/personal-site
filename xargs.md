@@ -1,5 +1,5 @@
 Fun with xargs
-==============
+--------------
 
 All of a sudden I wanted to know the size of some binary file I know there is
 this unix command called `du` that will give me the size of the file,  
