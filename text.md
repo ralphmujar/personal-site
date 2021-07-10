@@ -15,12 +15,12 @@ root folder.
 
 like this
 
-docker-compose.yaml
-makefile
-dockerfile
-Jenkinsfile
-/src
-/manifest -> helm pkg
+    docker-compose.yaml
+    makefile
+    dockerfile
+    Jenkinsfile
+    /src
+    /manifest -> helm pkg
 
 
 
